@@ -1,0 +1,39 @@
+baseURL = 'https://spsseano.com/'
+languageCode = 'en-us'
+title = "Sean's Shitposting"
+
+theme = "github-style"
+lastmod = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+  lineNos = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[params]
+  author = "Sean S"
+  nickname = "spsseano"
+  description = "Shitposting thru the pain"
+  github = "spslater"
+  tumblr = "spsseano"
+  bluesky = "spsseano.com"
+  url = "https://spslater.com"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "😭"
+  headerIcon = "/images/octicon.png"
+  avatar = "/images/avatar.png"
+  enableSearch = true
+
+[outputs]
+  home = ["html", "json"]
+
+[outputFormats.json]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = false
