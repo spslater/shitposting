@@ -2,38 +2,47 @@ baseURL = 'https://spsseano.com/'
 languageCode = 'en-us'
 title = "Sean's Shitposting"
 
-theme = "github-style"
+theme = "pure"
 lastmod = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+sectionPagesMenu = 'main'
+
+copyright = 2024
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
 [markup.goldmark.renderer]
   unsafe = true
 [markup.highlight]
+  style = 'solarized-light'
   lineNos = true
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [params]
-  author = "Sean S"
-  nickname = "spsseano"
-  description = "Shitposting thru the pain"
-  github = "spslater"
-  tumblr = "spsseano"
-  bluesky = "spsseano.com"
-  url = "https://spslater.com"
-  rss = true
+  description = "working thru the pain"
   lastmod = true
-  userStatusEmoji = "😭"
   headerIcon = "/images/octicon.png"
   avatar = "/images/avatar.png"
-  enableSearch = true
 
-[outputs]
-  home = ["html", "json"]
+[[params.links]]
+  type = "link"
+  override = "octoface"
+  link = "github.com/spslater/shitposting"
+[[params.links]]
+  type = "email"
+  link = "sean@spslater.com"
+[[params.links]]
+  type = "link"
+  link = "example.com"
 
-[outputFormats.json]
-  mediaType = "application/json"
-  baseName = "index"
-  isPlainText = false
+[[params.socials]]
+  site = "tumblr"
+  value = "feelin.blue"
+  vanity = true
+[[params.socials]]
+  site = "bluesky"
+  value = "spsseano.com"

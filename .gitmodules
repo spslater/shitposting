@@ -1,3 +1,6 @@
 [submodule "themes/github-style"]
 	path = themes/github-style
 	url = git@github.com:spslater/hugo-github-style.git
+[submodule "themes/pure"]
+	path = themes/pure
+	url = git@github.com:spslater/hugo-pure.git
