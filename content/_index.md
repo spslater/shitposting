@@ -1,17 +1,7 @@
 +++
 date = '2024-11-29T01:51:06-05:00'
-draft = true
-title = "Sean's Shitposting"
+title = "Shitposting"
 description = "this is the desc"
 +++
 
-Hello there, these are the shitposts.
-
-```python
-def foo():
-    print("bar")
-```
-
-<!-- {{< lorem 7 >}} -->
-
-{{< bluesky "https://bsky.app/profile/adamconover.net/post/3lcekdutxgk2h" >}}
+Hello there, these are my shitposts. Stray thoughts I have I would like to put here. Idk how long that'll last though. Not really a blog but also not not a blog. Time will tell what it turns into.
