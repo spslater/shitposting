@@ -12,4 +12,6 @@ def foo():
     print("bar")
 ```
 
-{{< lorem 3 >}}
+<!-- {{< lorem 7 >}} -->
+
+{{< bluesky "https://bsky.app/profile/adamconover.net/post/3lcekdutxgk2h" >}}

@@ -6,10 +6,19 @@ theme = "pure"
 lastmod = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-
-sectionPagesMenu = 'main'
+enableEmoji = true
 
 copyright = 2024
+
+[permalinks]
+  [permalinks.page]
+    posts = '/p/:year/:month/:slug/'
+    guides = '/g/:slug'
+    links = '/l/:slug'
+  [permalinks.section]
+    posts = '/posts/'
+    guides = '/guides/'
+    links = '/links/'
 
 [markup]
 defaultMarkdownHandler = 'goldmark'
