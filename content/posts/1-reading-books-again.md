@@ -1,5 +1,6 @@
 +++
 date = '2024-11-24T06:21:27-05:00'
+publish = '2024-11-24T06:30:00-05:00'
 title = 'Reading Books Again'
 pin = true
 tags = ['podcasts', 'books', 'reading']
