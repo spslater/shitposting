@@ -29,6 +29,7 @@ defaultMarkdownHandler = 'goldmark'
   lineNos = true
 
 [frontmatter]
+  date = ["publish", ":default"]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [params]
@@ -41,12 +42,19 @@ defaultMarkdownHandler = 'goldmark'
   type = "link"
   override = "octoface"
   link = "github.com/spslater/shitposting"
+  display = "github repo"
 [[params.links]]
   type = "email"
   link = "sean@spslater.com"
 [[params.links]]
   type = "link"
-  link = "example.com"
+  link = "leagueofcomicgeeks.com/profile/spsseano"
+  display = "League of Comic Geeks"
+[[params.links]]
+  type = "link"
+  override = "book"
+  link = "https://www.goodreads.com/_sean"
+  display = "Goodreads"
 
 [[params.socials]]
   site = "tumblr"
