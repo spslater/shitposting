@@ -15,10 +15,12 @@ copyright = 2024
     posts = '/p/:year/:month/:slug/'
     guides = '/g/:slug'
     links = '/l/:slug'
+    diffs = '/d/:slug'
   [permalinks.section]
     posts = '/posts/'
     guides = '/guides/'
     links = '/links/'
+    diffs = '/diffs/'
 
 [markup]
 defaultMarkdownHandler = 'goldmark'
@@ -53,7 +55,7 @@ defaultMarkdownHandler = 'goldmark'
 [[params.links]]
   type = "link"
   override = "book"
-  link = "https://www.goodreads.com/_sean"
+  link = "www.goodreads.com/_sean"
   display = "Goodreads"
 
 [[params.socials]]

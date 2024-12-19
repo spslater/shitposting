@@ -3,13 +3,15 @@ date = '2024-12-18T00:24:06-05:00'
 publish = '2024-12-18T06:00:00-05:00'
 title = 'Books Recap - 2024'
 tags = ['books', 'reading', 'recap']
+[params]
+  diffs = 'recap-2024-books.md'
 +++
 
 I have started reading prose books again! I have struggled making the time to just sit and read and not feel like I'm wasting it or could be doing something "more productive".
 
 I've read the 3 books in Timothy Zahn's *Heir to the Empire* trilogy this year, all in the back quarter. [A More Civilized Age](https://amorecivilizedage.net/) started doing the books and I figured this would be the perfect time to give myself a good reason to actually read again.
 
-I finished *Heir to the Empire* September 10th, *Dark Force Rising* November 3rd, and *The Last Command* December 13th. The last book took a little bit longer because I paused to wait for the podcast to cover the section I had just read so I wouldn't get confused on what they were covering. A good sign that I was really engaged! I can see why people really *really* like these books, the characters felt like their movie counterparts and the new characters fit well. I really like how much of a loser Mara Jade is, she was a really fun character to introduce. One thing I found really interesting is how the "Sith" are never mentioned, it's always "Dark Jedi" this and "Dark Jedi" that. A story where all the Sith stuff was just fallen jedi or if dark jedi were just what dark side Force users were called would be neat to have seen.
+I finished *Heir to the Empire* September 10th, *Dark Force Rising* November 3rd, and *The Last Command* December 13th. The last book took a little bit longer because I paused to wait for the podcast to cover the section I had just read so I wouldn't get confused on what they were covering. A good sign that I was really engaged! I can see why people really *really* like these books, the characters felt like their movie counterparts and the new characters fit well. I really like how much of a loser Mara Jade is, she was a really fun character to introduce. I was surprised that Luuke was introduced so early in the EU. It really felt like he was a late "we're getting desperate" story. I should've seen it coming when clones were introduced early on. One thing I found really interesting is how the "Sith" are never mentioned, it's always "Dark Jedi" this and "Dark Jedi" that. A story where all the Sith stuff was just fallen jedi or if dark jedi were just what dark side Force users were called would be neat to have seen.
 
 I had tried continuing Brandon Sanderson's *Mistborn: The Well of Ascension* earlier this year, but only made it a couple chapters thru before laying it down again. I'm about 150 pages into it and it hasn't grabbed me that much. I'm going to pick it up again soon, possibly after I read another book or two. I enjoyed the first book in the series but that one also took me a very long time to read thru (lots of starts and stops).
 
