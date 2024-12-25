@@ -47,7 +47,7 @@ defaultMarkdownHandler = 'goldmark'
   display = "github repo"
 [[params.links]]
   type = "email"
-  link = "sean@spslater.com"
+  link = "howdy@spsseano.com"
 [[params.links]]
   type = "link"
   link = "leagueofcomicgeeks.com/profile/spsseano"
