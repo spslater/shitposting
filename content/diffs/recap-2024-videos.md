@@ -1,6 +1,6 @@
 +++
 date = '2024-12-25T22:22:59-05:00'
-draft = true
+publish = '2024-12-25T22:45:00-05:00'
 title = 'Recap 2024 Videos'
 [params.diff]
   page = 'posts/recap-2024-videos.md'
