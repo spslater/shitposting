@@ -3,6 +3,8 @@ date = '2024-12-18T00:29:44-05:00'
 publish = '2024-12-25T06:00:00-05:00'
 title = 'Video Recap - 2024'
 tags = ['tv', 'movie', 'web', 'recap']
+[params]
+  diffs = 'recap-2024-videos.md'
 +++
 
 What is going on here? Why have I grouped all of video into 1 recap? Because I
@@ -82,6 +84,8 @@ order:
 - [A THOUSAND
   SUNS](https://www.youtube.com/playlist?list=PLUYLgWkQZ39J61ykA_Jrknx8230GbnYvV)
   ~ [Blackmilk Studio](https://www.youtube.com/@blackmilk_studio) {playlist}
+- [asterisks in sports](https://www.youtube.com/watch?v=zLgrr749acE) ~
+  [hydn](https://www.youtube.com/@hydn.)
 - [Correcting the NFL's passer rating
   lie](https://www.youtube.com/watch?v=5E7Z84WttIc) ~ [Secret
   Base](https://www.youtube.com/@SecretBaseSBN)
@@ -133,6 +137,9 @@ order:
 - [The Most Illegal Baseball Bat Ever
   Created](https://www.youtube.com/watch?v=M6OWDcKg6J4) ~ [Baseball Doesn't
   Exist](https://www.youtube.com/@BaseballDoesntExist)
+- [the nfl player who literally did not
+  exist](https://www.youtube.com/watch?v=Nm-USIiwi5s) ~
+  [hydn](https://www.youtube.com/@hydn.) 
 - [The Royal Title that No One Can
   Remember](https://www.youtube.com/watch?v=epw6P56KyTI) ~ [Cambrian
   Chronicles](https://www.youtube.com/@CambrianChronicles)
