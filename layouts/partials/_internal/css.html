@@ -1,0 +1,32 @@
+{{ define "partials/_internal/css/dev" }}
+  <link rel="stylesheet" href="{{ .Permalink }}">
+{{ end }}
+
+{{ $csses := slice
+  "css/pure.css"
+  "css/pure-responsive.css"
+  "css/syntax.css"
+  "css/colors.css"
+  "css/main.css"
+}}
+
+{{- if eq hugo.Environment "development" }}
+  {{ range $csses }}
+    {{ with resources.Get . }}
+      {{ partial "_internal/css/dev" . }}
+    {{ end }}
+  {{ end }}
+{{- else }}
+  {{ $css := slice }}
+  {{ range $csses }}
+    {{ with resources.Get . }}
+      {{ $css = $css | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $fin := $css | resources.Concat "css/bundle.css" | minify | fingerprint }}
+  {{- with $fin }}
+    <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{- end }}
+{{- end }}
+
+

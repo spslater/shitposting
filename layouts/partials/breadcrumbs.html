@@ -1,0 +1,9 @@
+{{ if gt (len .Ancestors.Reverse) 2 }}
+<nav aria-label="breadcrumb" class="breadcrumbs pure-u-1">
+  <ul>
+    {{- range after 1 .Ancestors.Reverse }}
+      <li><a class="secondary" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+{{ end }}

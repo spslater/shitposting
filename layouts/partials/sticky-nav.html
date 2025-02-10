@@ -1,0 +1,18 @@
+<nav class="sp-header">
+  <a class="{{ if .IsHome }}selected{{ end }}" href="{{ .Site.BaseURL }}">
+    {{ partial "octicon/book.html" .}}
+    Overview
+  </a>
+  <a class="{{ if eq .Section "tags" }}selected{{ end }}" href="{{urls.JoinPath .Site.BaseURL "tags" }}">
+    {{ partial "octicon/tag.html" .}}
+    Tags
+  </a>
+  {{ $curSec := .Section }}
+  {{ range .Site.Sections.ByWeight }}
+  <a class="{{ if eq $curSec .Section }}selected{{ end }}" href="{{urls.JoinPath .Site.BaseURL .Section }}">
+    {{ partial "octicon/repo.html" . }}
+    {{ .Title }}
+    <span class="counter">{{ .Pages.Len }}</span>
+  </a>
+  {{ end }}
+</nav>

@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1 class="pure-u-1">{{ .Title }}</h1>
+
+  <div class="pure-u-1">
+    {{ partial "_internal/datetime.html" . }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ partial "_internal/diff.html" . }}
+  </div>
+
+  <div class="pure-u-1">
+    {{ .Content }}
+  </div>
+{{ end }}

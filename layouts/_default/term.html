@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="pure-u-1">
+    <h1>{{partial "_internal/emoji-tag-wrap.html" (dict "text" .Title)}}</h1>
+  </div>
+  {{ partial
+    "listicle.html"
+    ( dict
+      "page" .
+      "pins" .RegularPagesRecursive
+      "history" .RegularPagesRecursive
+    )
+  }}
+{{ end }}

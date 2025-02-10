@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+  {{ partial "_internal/css.html" . }}
+  {{ block "custom-css" . }}{{ end }}
+  {{ block "custom-js-head" . }}{{ end }}
+</head>
+<body class="pure-g">
+  <div class="pure-u-1-6">
+    <header class="sp-sidebar sticky">
+      {{ partial "header.html" . }}
+    </header>
+  </div>
+  <div class="pure-u-5-6">
+    <div class="pure-g">
+      <main class="sp-container">
+        <div class="sticky pure-u-1">
+          {{ partial "sticky-nav.html" . }}
+        </div>
+        {{/*  {{ partial "breadcrumbs.html" . }}  */}}
+        <div class="pure-u-1">
+          <article class="sp-main">
+              <div class="pure-g">
+                {{ block "main" . }}{{ end }}
+              </div>
+          </article>
+        </div>
+        <div class="pure-u-1">
+          <footer class="sp-footer">
+            <p>Copyright {{ now.Year }}. All rights reserved.</p>
+          </footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  {{ block "custom-js-body" . }}{{ end }}
+</body>
+</html>

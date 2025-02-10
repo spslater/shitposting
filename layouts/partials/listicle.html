@@ -1,0 +1,61 @@
+{{ $pinned := where .pins "Params.pin" true }}
+
+{{ range $pinned }}
+<div class="pure-u-1-2">
+    <article class="sp-bump sp-pinned">
+      <header>
+        <h4>
+          {{ $octicon := "octicon/repo.html" }}
+          {{ with .Params.octicon }}
+            {{ $octicon = printf "octicon/%s.html" . }}
+          {{ end }}
+          {{ partial $octicon . }}
+          <a href="{{ .Permalink }}">
+            <span class="repo" title="{{ .Title }}">{{ .Title }}</span>
+          </a>
+        </h4>
+      </header>
+
+      <main name="summary">
+        {{ .Summary | safeHTML }}
+      </main>
+
+      <footer>
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      </footer>
+    </article>
+</div>
+{{ end }}
+
+<div class="pure-u-1">
+  <article class="sp-bump">
+    {{ .page.Content }}
+  </article>
+</div>
+
+<div class="pure-u-1">
+  <div class="sp-bump">
+    <div class="pure-g">
+      {{ range .history.GroupByDate "2006" }}
+        {{ $y := .Key }}
+        {{ range .Pages.GroupByDate "January" }}
+          {{ $m := .Key }}
+          <div class="list-date pure-u-1">
+            <h4>{{ $y }} <span>{{$m}}</span></h4>
+          </div>
+          {{ range .Pages.ByDate.Reverse }}
+            <div class="pure-u-1">
+              <article class="pure-g">
+                  <a class="pure-u-1-6" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                  <span class="pure-u-1-12">{{ time.Format "Jan 2" .Date.Local }}</span>
+                  <span class="pure-u-1-8 num-align">~ {{ .ReadingTime }} min read {{ partial "octicon/stopwatch.html" . }}</span>
+                  <span class="pure-u-1-24"></span>
+                  <span class="pure-u-14-24">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</span>
+              </article>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>

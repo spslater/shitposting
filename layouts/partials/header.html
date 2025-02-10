@@ -1,0 +1,15 @@
+<div class="sp-bump pure-g">
+  <h1 class="pure-u-1">{{ .Site.Title }}</h1>
+  <h2 class="pure-u-1">{{ .Site.Params.description }}</h2>
+
+  <hr />
+
+  {{ range .Site.Params.links }}
+    {{ partial "_internal/link.html" . }}
+  {{ end }}
+  <hr />
+
+  {{ range .Site.Params.socials }}
+    {{ partial "_internal/social.html" . }}
+  {{ end }}
+</div>

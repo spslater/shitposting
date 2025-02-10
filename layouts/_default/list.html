@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ partial
+    "listicle.html"
+    ( dict
+      "page" .
+      "pins" .RegularPagesRecursive
+      "history" .RegularPagesRecursive
+    )
+  }}
+{{ end }}

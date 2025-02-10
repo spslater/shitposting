@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ partial
+    "listicle.html"
+    ( dict
+      "page" .
+      "pins" .Site.Pages
+      "history" (where .Site.RegularPages "Layout" "ne" "diff")
+    )
+  }}
+{{ end }}

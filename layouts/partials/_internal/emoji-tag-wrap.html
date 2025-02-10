@@ -1,0 +1,5 @@
+{{ .text }}
+{{ $emoji := (partial "_internal/emoji-tag.html" .)}}
+{{ if eq (strings.CountRunes $emoji) 1 }}
+({{ $emoji }})
+{{ end }}

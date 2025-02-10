@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="pure-u-1">
+    <h1>{{ .Page.Title }}</h1>
+  </div>
+  <div class="pure-u-1">
+    <table class="pure-table pure-table-horizontal">
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>#</th>
+          <th>Most Recent</th>
+          <th>Modified Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Pages.ByLastmod }}
+        <tr>
+            <td>
+              <a href="{{ .RelPermalink }}">{{ partial "_internal/emoji-tag-wrap.html" (dict "text" (.LinkTitle | lower) ) }}</a>
+            </td>
+            <td>
+              {{ .Pages.Len }}
+            </td>
+            <td>
+              {{ $recent := index .Pages.ByLastmod 0 }}
+              <a href="{{ .RelPermalink }}">{{ $recent.Title}}</a>
+            </td>
+            <td>
+              {{ with $recent.Lastmod }}
+                {{ partial "_internal/datetime.html" (dict "Date" .) }}
+              {{ else with $recent.Date }}
+                {{ partial "_internal/datetime.html" (dict "Date" .) }}
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+      </tbody>
+    </table>
+  </div>
+{{ end }}

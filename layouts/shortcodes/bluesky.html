@@ -1,0 +1,8 @@
+{{/* https://www.brycewray.com/posts/2024/11/simple-hugo-shortcode-embedding-bluesky-posts/ */}}
+
+{{- $request := printf "https://embed.bsky.app/oembed?%s" (querify "url" (.Get 0)) -}}
+
+{{- $jsonOembed := resources.GetRemote $request -}}
+{{- $jsonOembed = $jsonOembed | transform.Unmarshal -}}
+{{- $jsonOHTML := $jsonOembed.html -}}
+{{- $jsonOHTML | safeHTML -}}

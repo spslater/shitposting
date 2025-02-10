@@ -1,0 +1,7 @@
+{{ $pg := . }}
+{{ with .Params.diffs }}
+    {{ with $pg.GetPage (urls.JoinPath "/diffs" .) }}
+        {{ partial "octicon/diff.html" . }}
+        <a href="{{ .RelPermalink }}">diffs</a>
+    {{ end }}
+{{ end }}

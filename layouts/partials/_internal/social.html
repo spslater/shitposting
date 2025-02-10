@@ -1,0 +1,21 @@
+{{ if eq .site "bluesky" }}
+  <a class="social" href="https://bsky.app/profile/{{ .value }}">
+    <img alt="@bluesky" width="32" height="32" src="{{ "images/bluesky.png" | absURL }}" class="avatar">
+  </a>
+{{ else if eq .site "instagram" }}
+  <a class="social" href="https://instagram.com/{{ .value }}">
+    <img alt="@instagram" width="32" height="32" src="{{ "images/instagram.png" | absURL }}" class="avatar">
+  </a>
+{{ else if eq .site "tumblr" }}
+  {{ $url := printf "https://%s.tumblr.com/" .value }}
+  {{ if .vanity }}
+    {{ $url = printf "https://%s" .value }}
+  {{ end }}
+  <a class="social" href="{{ $url }}">
+    <img alt="@tumblr" width="32" height="32" src="{{ "images/tumblr.png" | absURL }}" class="avatar">
+  </a>
+{{ else if eq .site "rss" }}
+  <a class="social" href="{{ "index.xml" | absURL }}">
+    <img alt="@rss" width="32" height="32" src="{{ "images/rss.png" | absURL }}" class="avatar">
+  </a>
+{{ end }}
