@@ -6,6 +6,7 @@
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
   {{ partial "_internal/css.html" . }}
   {{ block "custom-css" . }}{{ end }}
+  <script defer data-domain="spsseano.com" src="https://analytics.whatno.io/js/script.hash.outbound-links.js"></script>
   {{ block "custom-js-head" . }}{{ end }}
 </head>
 <body class="pure-g">
